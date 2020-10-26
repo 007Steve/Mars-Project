@@ -1,12 +1,13 @@
 @font-face{
-    src: url(fontsMandalore-K77lD.otf);
-    font-family:Mandalore-K77lD;
+    src: url(fonts/Mismo-9YKDy.otf);
+    font-family:Outerorbit;
 }
  body{
    margin: 0;
    padding: 0;
    background-color: black;
    color: white;
+   font-family:Outerorbit;
  }
 /** Nav Section**/
  nav {
@@ -33,14 +34,24 @@
 
  .nav-links{
     font-size: 1.2rem;
+    font-family:Outerorbit;
  }
 /** 3D Model Section **/
  model-viewer {
     width:90%;
     height:100vh;
     margin: 0 auto;
+   
   }
-
+h1{
+    font-family:Outerorbit;
+    font-size: 2.3em;
+    text-align: center;
+    position: relative;
+    bottom:200px;
+    letter-spacing:1.1em;
+    margin-left: 2.3rem;
+}
 /** Weather Info Section**/
   .mars-info-section{
     display: flex;
@@ -56,23 +67,69 @@
 
   .mars-info{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+  justify-content: center;
+    align-items: center;
     backdrop-filter: blur(4px);
     width: 80%;
-    height: 70%;
-    border-radius:4% ;
+    padding: 8%;
+    border-radius:10px ;
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
     -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
     box-shadow:         6px 2px 79px 2px rgb(51, 47, 47);  
+    
   }
- h2{
-    font-size: 72px;
-  background: -webkit-linear-gradient(#FF3D00, #DE3601);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+
+  #title-weather{
+    font-size: 1.6em;
+    background: -webkit-linear-gradient(#FF3D00, #DE3601);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     height: 1.1em;
     border-radius: 10%;
     padding: 2.em;
     text-transform: uppercase;
+    text-align: center;
     
+ 
  }
+
+ .mars-weather-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mars-info-title{
+    
+    font-family:Outerorbit;
+}
+
+.mars-data{
+    color: rgb(255, 218, 6);
+}
+
+@media only screen and (min-width: 1000px) {
+    .mars-weather-card{
+     
+      flex-direction: row;
+    }
+    .mars-info{
+        font-size: 2.3em;
+    }
+
+    h1{
+        font-size: 5.5em;
+        position: relative;
+       bottom:400px;
+    }
+
+    #nav-logo{
+        width:5%;
+       margin-left: 5.40em;
+      }
+  }
