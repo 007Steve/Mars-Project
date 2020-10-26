@@ -21,7 +21,7 @@
   
 }
  #nav-logo{
-   width:25%;
+   width:20%;
    margin: 0px auto;
    object-fit: contain;
  }
@@ -91,7 +91,7 @@ h1{
     padding: 2.em;
     text-transform: uppercase;
     text-align: center;
-    
+    text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(245, 245, 245), 0 -1px black;
  
  }
 
@@ -107,10 +107,12 @@ h1{
 .mars-info-title{
     
     font-family:Outerorbit;
+    text-shadow: -1px 0 rgb(0, 0, 0), 0 7px black, 1px 0 black, 0 -1px black;
 }
 
 .mars-data{
     color: rgb(255, 218, 6);
+    text-shadow: -1px 0 rgb(0, 0, 0), 0 7px black, 1px 0 black, 0 -1px black;
 }
 
 @media only screen and (min-width: 1000px) {
