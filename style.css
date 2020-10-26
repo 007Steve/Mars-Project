@@ -1,0 +1,78 @@
+@font-face{
+    src: url(fontsMandalore-K77lD.otf);
+    font-family:Mandalore-K77lD;
+}
+ body{
+   margin: 0;
+   padding: 0;
+   background-color: black;
+   color: white;
+ }
+/** Nav Section**/
+ nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin-left: .50em;
+ }
+.nav-logo-container{
+  
+}
+ #nav-logo{
+   width:25%;
+   margin: 0px auto;
+   object-fit: contain;
+ }
+
+ .nav-links-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+
+ .nav-links{
+    font-size: 1.2rem;
+ }
+/** 3D Model Section **/
+ model-viewer {
+    width:90%;
+    height:100vh;
+    margin: 0 auto;
+  }
+
+/** Weather Info Section**/
+  .mars-info-section{
+    display: flex;
+    background-image: url(https://content.presspage.com/uploads/1979/1920_190327-mars-sample-return-banner-149413.jpg?10000);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .mars-info{
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    width: 80%;
+    height: 70%;
+    border-radius:4% ;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         6px 2px 79px 2px rgb(51, 47, 47);  
+  }
+ h2{
+    font-size: 72px;
+  background: -webkit-linear-gradient(#FF3D00, #DE3601);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    height: 1.1em;
+    border-radius: 10%;
+    padding: 2.em;
+    text-transform: uppercase;
+    
+ }
